@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Lux decor</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="build/css/style.css">
+	<!-- <meta name="robots" content="noindex, nofollow" /> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+<body class="body">
+    <div class="wrapper">
+        //= loader.html
+        //= header.html
+        <main class="content">
+            <div class="container">
+                //= slider.html
+                <div class="content__title"><h2>Хиты продаж</h2><a href="#">Перейти в раздел</a></div>
+                //= product-slider.html
+                <div class="content__title"><h2>Акции</h2><a href="#">Перейти в раздел</a></div>
+                //= product-slider2.html
+                <div class="content__newsletter newsletter">
+                    <h2 class="newsletter__title">Подпишитесь на рассылку и получайте скидки</h2>
+                    <form class="newsletter__form" action="#" name="mail" method="GET">
+                        <input class="newsletter__input" type="text" placeholder="Введите Ваш Email">
+                        <button class="newsletter__button"><img src="build/img/icons/form-letter.png" alt=""></button>
+                    </form>
+                </div>
+                <div class="content__title"><h2>Мы гарантируем</h2></div>
+                <div class="content__advantages">
+                    <div class="content__advantages-row">
+                        <div class="content__advantages-column">
+                            <div class="content__advantages-item">
+                                <div class="content__advantages-img">
+                                    <img src="build/img/icons/delivery.jpg" alt="">
+                                </div>
+                                <h3 class="content__advantages-title">Быстрая доставка</h3>
+                            </div>
+                        </div>
+                        <div class="content__advantages-column">
+                            <div class="content__advantages-item">
+                                <div class="content__advantages-img">
+                                    <img src="build/img/icons/calculation.jpg" alt="">
+                                </div>
+                                <h3 class="content__advantages-title">Оперативный расчет заказа</h3>
+                            </div>
+                        </div>
+                        <div class="content__advantages-column">
+                            <div class="content__advantages-item">
+                                <div class="content__advantages-img">
+                                    <img src="build/img/icons/production.jpg" alt="">
+                                </div>
+                                <h3 class="content__advantages-title">Вся продукция оригинальная</h3>
+                            </div>
+                        </div>
+                        <div class="content__advantages-column">
+                            <div class="content__advantages-item">
+                                <div class="content__advantages-img">
+                                    <img src="build/img/icons/prices.jpg" alt="">
+                                </div>
+                                <h3 class="content__advantages-title">Актуальные цены и наличие</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__title"><h2>Полезно знать</h2></div>
+                //= good-to-know-slider.html
+                <div class="content__description description">
+                    <div class="description__text">
+                        Уважаемые клиенты, наш интернет магазин штукатурки имеет обширный ассортимент декоративной штукатурки, клей бостик, 3D панели. Большой склад позволяет нам давать самую низкую цену без наценок больших выставочных залов и магазинов. В данный момент склад позволяет отгружать по украине, в киеве штукатурки ойкос, стеклохолст, потолочный плинтус. Купить штукатурку в интернет магазине по достаточно низкой цене, чем в салоне венецианской штукатурки очень обоснованно. Нет никакой разницы между качеством штукатурки травертин в салон магазине и интернет магазине. Таже фасовка, идентичные ведра, точный объем в фасовке. Также мы можем колорировать любую базу штукатурки или краски, на складе в наличии все необходимое оборудование и опытный технолог. На практике вы сможете получить скидку или купить штукатурку по акции на 30 и более процентов.
+                        <br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    //= footer.html
+    <script src="build/js/header.js"></script>
+    <script src="build/js/lib.js"></script>
+    <script src="build/js/slider.js"></script>
+    <script>  
+        window.addEventListener('DOMContentLoaded', function() {
+            responsiveFont(img, title, perTitle);
+            responsiveFont(img, old, perOld);
+            responsiveFont(img, newP, perNew);
+            responsiveFont(img, buy, perBuy);
+            responsiveFont(img, comp, perComp);
+        });
+        window.addEventListener('resize', function() {
+            responsiveFont(img, title, perTitle);
+            responsiveFont(img, old, perOld);
+            responsiveFont(img, newP, perNew);
+            responsiveFont(img, buy, perBuy);
+            responsiveFont(img, comp, perComp);
+        });
+
+        pagination('.good-to-know-slider__bar');
+    </script>
+</body>
+</html>

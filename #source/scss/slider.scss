@@ -1,0 +1,143 @@
+.slider-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 0px 13px 0px;
+    @media(max-width: 1024px) {justify-content: center;}
+    @media(max-width: 949px) {display: none;}
+}
+
+.slider-wrapper {
+    position: relative;
+    flex: 0 0 100%;
+    margin: 0;
+    position: relative;
+    max-width: 860px;
+}
+
+.slider__preloader {
+    // display: none;
+    // z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D9DCDB; 
+}
+
+.slider {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.slider__row {
+    flex: 0 0 100%;
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.slider__img {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 50% 0;
+    width: 100%;
+    
+    & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+}
+
+.slider__control_left {
+    left: -30px;
+}
+
+.slider__control_right {
+    right: -30px;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    position: absolute;
+    top: 21px;
+    right: 15px;
+    background: url("../img/icons/slider-control-arrow-left.jpg") no-repeat;
+}
+
+.slider__control_right::before {
+    position: absolute;
+    top: 21px;
+    right: 15px;
+    background: url("../img/icons/slider-control-arrow-right.jpg") no-repeat;
+}
+
+.slider__indicators {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 30px;
+}
+
+.slider__indicators li {
+    position: relative;
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin: 0 11px;
+    border-radius: 50%;
+    list-style-type: none;
+    cursor: pointer;
+    background-color: #fff;
+    transition: opacity .6s ease;
+}
+
+.slider__indicators li.active {
+    &:before {
+        position: absolute;
+        content: '';
+        top: -11px;
+        left: -11px;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+    }
+}

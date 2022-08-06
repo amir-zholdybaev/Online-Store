@@ -1,0 +1,129 @@
+.product-slider-wrapper {
+    position: relative;
+}
+
+.product-slider {
+    position: relative;
+    overflow: hidden;
+    
+    @media(max-width: 525px) {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
+
+#product-slider2 {
+    margin: 0px 0px 43px 0px; 
+    @media(max-width: 525px) {margin: 0px auto 30px;}
+}
+
+.product-slider__row {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.product-slider__column {
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    justify-content: center;
+    
+    @media(max-width: 1020px) {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    @media(max-width: 756px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    @media(max-width: 525px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.product-slider__product-item {}
+
+.product-slider__control {
+    z-index: 4;
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product-slider__control_show {
+    display: flex;
+}
+
+.product-slider__control:hover,
+.product-slider__control:focus {
+    opacity: .9;
+}
+
+.product-slider__control_left {
+    left: -28px;
+}
+
+.product-slider__control_right {
+    right: -28px;
+}
+
+.product-slider__control::before,::after {
+    position: absolute;
+    content: '';
+}
+
+.product-slider__control_left {
+    &:before {
+        width: 11px;
+        height: 2px;
+        background-color: #000;
+        opacity: 0.4;
+        bottom: 25px;
+        right: 25px;
+        transform: rotateZ(45deg);
+    }
+    &:after {
+        width: 11px;
+        height: 2px;
+        background-color: #000;
+        opacity: 0.4;
+        top: 25px;
+        right: 25px;
+        transform: rotateZ(-45deg);
+    }
+}
+
+.product-slider__control_right {
+    &:before {
+        width: 11px;
+        height: 2px;
+        background-color: #000;
+        opacity: 0.4;
+        top: 25px;
+        left: 25px;
+        transform: rotateZ(45deg);
+    }
+    &:after {
+        width: 11px;
+        height: 2px;
+        background-color: #000;
+        opacity: 0.4;
+        bottom: 25px;
+        left: 25px;
+        transform: rotateZ(-45deg);
+    }
+}
+
+.product-slider__item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+}

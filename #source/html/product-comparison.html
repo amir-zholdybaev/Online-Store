@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Сравнение товаров</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="build/css/style.css">
+	<!-- <meta name="robots" content="noindex, nofollow" /> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+<body class="body">
+    <div class="wrapper">
+        //= header.html
+        <main class="product-comparison__content">
+            <div class="container">
+                <h1 class="product-comparison__title title">Сравнение товаров</h1>
+                <button class="product-comparison__filter-button" id="filter-button">
+                    <span>Фильтр</span>
+                </button>
+                <div class="product-comparison__row">
+                    <div class="product-comparison__block-row" id="block-row">
+                        <div class="product-comparison__filter" id="filter" onclick="event.stopPropagation()">
+                            <h3 class="product-comparison__filter-title">Выберите категорию</h3>
+                            <select class="product-comparison__select" id="category" name="category" >
+                                <option value="краски">Краски</option>
+                            </select>
+                            <h3 class="product-comparison__filter-title">Показывать</h3>
+                            <form class="product-comparison__form" action="#" method="GET">
+                                <div class="product-comparison__form-column">
+                                    <input type="radio" class="product-comparison__input" id="all-parameters">
+                                    <label class="product-comparison__label" for="all-parameters">Все параметры</label>
+                                </div>
+                                <div class="product-comparison__form-column">
+                                    <input type="radio" class="product-comparison__input" id="differing">
+                                    <label class="product-comparison__label" for="differing">Различающиеся</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="product-comparison__characters">
+                            <h3 class="product-comparison__filter-title product-comparison__filter-title_characters">Характеристики</h3>
+                            <div class="product-comparison__character">Производитель</div>
+                            <div class="product-comparison__character"><span>Назначение</span></div>
+                            <div class="product-comparison__character">Страна производитель</div>
+                        </div>
+                    </div>
+                    <div class="product-comparison__products">
+                        <div class="product-comparison__products-row">
+                            <div class="product-comparison__column">
+                                <div class="product-comparison__product-item product-item bestseller">
+                                    <button class="product-item__close"><img src="build/img/icons/product-item-close.png" alt=""></button>
+                                    <div class="product-item__content">
+                                        <a href="product-page.html" class="product-item__img" id="img"><img src="build/img/interior-super.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Матовая краска Interior 02
+                                            Super White Spektrum</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                    </div>
+                                    <div class="product-item__characters">
+                                        <div class="product-item__character product-item__character_manufacturer">Spektrum</div>
+                                        <div class="product-item__character product-item__character_appointment">Внутренние работы</div>
+                                        <div class="product-item__character product-item__character_made-in">Швеция</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-comparison__column">
+                                <div class="product-comparison__product-item product-item stock">
+                                    <button class="product-item__close"><img src="build/img/icons/product-item-close.png" alt=""></button>
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-pva.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 02</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                    </div>
+                                    <div class="product-item__characters">
+                                        <div class="product-item__character product-item__character_manufacturer">Spektrum</div>
+                                        <div class="product-item__character product-item__character_appointment">Внутренние работы</div>
+                                        <div class="product-item__character product-item__character_made-in">Швеция</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-comparison__column">
+                                <div class="product-comparison__product-item product-item">
+                                    <button class="product-item__close"><img src="build/img/icons/product-item-close.png" alt=""></button>
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-akryl.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 05</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                    </div>
+                                    <div class="product-item__characters">
+                                        <div class="product-item__character product-item__character_manufacturer">Spektrum</div>
+                                        <div class="product-item__character product-item__character_appointment">Внутренние работы</div>
+                                        <div class="product-item__character product-item__character_made-in">Швеция</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-comparison__column">
+                                <div class="product-comparison__product-item product-item">
+                                    <button class="product-item__close"><img src="build/img/icons/product-item-close.png" alt=""></button>
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-super.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Декоративное покрытие Ferrara Base S</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                    </div>
+                                    <div class="product-item__characters">
+                                        <div class="product-item__character product-item__character_manufacturer">Spektrum</div>
+                                        <div class="product-item__character product-item__character_appointment">Внутренние работы</div>
+                                        <div class="product-item__character product-item__character_made-in">Швеция</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    //= footer.html
+    <script src="build/js/header.js"></script>
+    <script src="build/js/lib.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            responsiveFont(img, title, perTitle);
+            responsiveFont(img, old, perOld);
+            responsiveFont(img, newP, perNew);
+            responsiveFont(img, buy, perBuy);
+            responsiveFont(img, comp, perComp);
+        });
+        window.addEventListener('resize', function() {
+            responsiveFont(img, title, perTitle);
+            responsiveFont(img, old, perOld);
+            responsiveFont(img, newP, perNew);
+            responsiveFont(img, buy, perBuy);
+            responsiveFont(img, comp, perComp);
+        });
+
+        var blockRow = document.getElementById('block-row');
+        var filter = document.getElementById('filter');
+        var filterButton = document.getElementById('filter-button');
+
+        filterButton.addEventListener('click', function() {
+            filter.classList.toggle('show');
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!filterButton.contains(event.target) && !filter.contains(event.target)) {
+                filter.classList.remove('show');
+            }
+        });
+
+        function filterPrepend(newParent, oldParent, child) {
+            if(window.innerWidth  <= 939) {
+                newParent.prepend(child);
+            }
+            else {
+                oldParent.prepend(child);
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {filterPrepend(filterButton, blockRow, filter);});
+        window.addEventListener('resize', function() {filterPrepend(filterButton, blockRow, filter);});
+    </script>
+</body>
+</html>

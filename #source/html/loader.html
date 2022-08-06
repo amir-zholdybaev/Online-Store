@@ -1,0 +1,73 @@
+<div class="loader">
+    <div class="loader__container">
+        <div class="shadow"></div>
+        <div class="box"></div>
+    </div>
+</div>
+<style>
+    .loader {
+        z-index: 20;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff; 
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+    .loader.hiden {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .loader__container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+
+    .box {
+        width: 50px;
+        height: 50px;
+        background: #fc9a00;
+        animation: animate .5s linear infinite;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 3px;
+    }
+    @keyframes animate {
+        17% { border-bottom-right-radius: 3px; }
+        25% { transform: translateY(9px) rotate(22.5deg); }
+        50% {
+            transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+            border-bottom-right-radius: 40px;
+        }
+        75% { transform: translateY(9px) rotate(67.5deg); }
+        100% { transform: translateY(0) rotate(90deg); }
+    } 
+
+    .shadow { 
+        width: 50px;
+        height: 5px;
+        background: #000;
+        opacity: 0.2;
+        position: absolute;
+        top: 59px;
+        left: 0;
+        border-radius: 50%;
+        animation: shadow .5s linear infinite;
+    }
+    @keyframes shadow {50% {transform: scale(1.3,1);}}
+</style>
+<script>
+    let loader = document.querySelector('.loader')
+
+    window.onload = function() {
+        setTimeout(() => {
+            loader.classList.add('hiden')
+        }, 500);
+    }
+</script>

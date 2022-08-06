@@ -1,0 +1,229 @@
+.contacts {
+
+    &__content {
+        background-color: #f7f7f7;
+        padding: 0px 0px 48px 0px;
+    }
+
+    &__bread-crumbs {}
+
+    &__title {}
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &__column {
+        flex: 0 0 50%;
+
+        @media(max-width: 1050px) {flex: 0 0 100%;}
+    }
+
+    &__wrapper {
+        padding: 38px 30px 36px 30px;
+        background-color: #fff;
+
+        @media(max-width: 500px) {padding: 0px 0px;}
+    }
+
+    &__address {
+        max-width: 493px;
+        color: #292626;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 22px;
+        text-align: left;
+        padding: 43px 0px 33px 166px;
+        border: 7px solid #F7F7F7;
+        margin: 0px 0px 37px 0px;
+        & span {
+            display: inline-block;
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                background: url('../img/icons/mark.png');
+                width: 90px;
+                height: 97px;
+                top: -74px;
+                left: -127px;
+
+                @media(max-width: 1050px) {
+                    top: -65px;
+                    left: -250px;
+                }
+                @media(max-width: 760px) {display: none;}
+            }
+        }
+
+        @media(max-width: 1050px) {
+            padding: 53px 0px 41px 0px;
+            text-align: center;
+            max-width: 100%;
+        }
+        @media(max-width: 500px) {border: none;}
+        @media(max-width: 500px) {
+            padding: 50px 0px 13px 0px;
+        }
+    }
+
+    &__connection-row {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+        @media(max-width: 1050px) {
+            justify-content: space-around;
+            width: 100%;
+        }
+        @media(max-width: 531px) {text-align: center;}
+    }
+
+    &__phones-mail {
+        flex: 0 0 auto;
+        margin: 0px 37px 0px 0px;
+
+        @media(max-width: 1050px) {margin: 0px 20px 0px 20px;}
+        @media(max-width: 591px) {margin: 0px 20px 50px 20px;}
+        @media(max-width: 450px) {margin: 0px 0px 50px 0px;}
+    }
+
+    &__phones {}
+
+    &__connection-title {
+        position: relative;
+        color: #7c7373;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        margin: 0px 0px 26px 0px;
+        padding: 0px 0px 0px 40px;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 33px;
+            height: 35px;
+            top: -10px;
+        }
+        &_phone {
+            &:before {
+                background: url('../img/icons/smartphone.png') no-repeat;
+                left: 0px;
+                
+                @media(max-width: 591px) {left: -10px;}
+            }
+        }
+        &_mail {
+            padding: 0px 0px 0px 5px;
+            &:before {
+                background: url('../img/icons/email.png') no-repeat;
+                left: 0px;
+
+                @media(max-width: 591px) {left: 0px;}
+            }
+        }
+        &_timetable {
+            padding: 0px 12px 0px 0px;
+            &:before {
+                background: url('../img/icons/time.png') no-repeat;
+                left: 0px;
+
+                @media(max-width: 591px) {left: 15px;}
+            }
+        }
+
+        @media(max-width: 591px) {
+            margin: 0px 0px 20px 0px;
+            padding: 0;
+        }
+    }
+
+    &__numbers {
+        margin: 0px 0px 36px 0px;
+
+        &-list {}
+        &-link {
+            & a {
+                color: #292626;
+                font-size: 16px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 22px;
+                text-align: left;
+            }
+        }
+    }
+
+    &__email {}
+
+    &__mail {
+        color: #292626;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 22px;
+        text-align: left;
+    }
+
+    &__timetable {
+        flex: 0 0 auto;
+        @media(max-width: 1050px) {margin: 0px 20px 0px 20px;}
+        @media(max-width: 531px) {margin: 0px 20px 30px 20px;}
+    }
+
+    &__days {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 22px;
+        text-align: left;
+        & span {
+            display: block;
+            margin: 0px 0px 22px 0px;
+        }
+
+        @media(max-width: 591px) {text-align: center;}
+    }
+
+    &__map-wrapper {
+        height: 100%;
+    }
+    &__map {
+        position: relative;
+        height: 100%;
+        & iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media(max-width: 1050px) {height: calc(300px + 200 * (100vw / 1326));}
+    }
+
+    &__call-us {
+        text-align: center;
+        color: #fffffe;
+        font-size: calc(14px + 4 * (100vw / 1326));
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 22px;
+        text-transform: uppercase;
+        background-color: #00b5ab;
+        padding: 22px 30px;
+
+        @media(max-width: 500px) {padding: 20px;}
+    }
+}

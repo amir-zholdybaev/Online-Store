@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Оформление заказа</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="build/css/style.css">
+	<!-- <meta name="robots" content="noindex, nofollow" /> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+<body class="body">
+    <div class="wrapper">
+        //= header.html
+        <main class="ordering__content">
+            <div class="ordering__bread-crumbs bread-crumbs">
+                <div class="container">
+                    <ul class="bread-crumbs__list">
+                        <li class="bread-crumbs__link"><a href="index.html"><img src="build/img/icons/home-page.png" alt=""></a></li>
+                        <li class="bread-crumbs__link"><a href="ordering.html">Оформление заказа</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="ordering__checkout-cards">
+                    <div class="ordering__checkout-card checkout-card">
+                        <button class="checkout-card__button"><img src="build/img/icons/checkout-card-close.png" alt=""></button>
+                        <div class="checkout-card__row">
+                            <div class="checkout-card__column checkout-card__column_left">
+                                <div class="checkout-card__unvisible-block"></div>
+                                <div class="checkout-card__img-title-row">
+                                    <a href="#" class="checkout-card__img"><img src="build/img/interior-super-small.jpg" alt=""></a>
+                                    <a href="#" class="checkout-card__title">Матовая краска Interior 02 Super White Spektrum</a>
+                                </div>
+                            </div>
+                            <div class="checkout-card__column checkout-card__column_right">
+                                <div class="checkout-card__price">
+                                    <div class="checkout-card__old-price">647,62 грн.</div>
+                                    <div class="checkout-card__new-price">647,62 грн.</div>
+                                </div>                               
+                                    <div class="checkout-card__quantity quantity">
+                                        <button class="quantity__minus"><img src="build/img/icons/minus.png" alt=""></button>
+                                        <div class="quantity__value"><span>1</span></div>
+                                        <button class="quantity__plus"><img src="build/img/icons/plus.png" alt=""></button>
+                                    </div>
+                                    <div class="checkout-card__new-price">647,62 грн.</div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ordering__checkout-card checkout-card">
+                        <button class="checkout-card__button"><img src="build/img/icons/checkout-card-close.png" alt=""></button>
+                        <div class="checkout-card__row">
+                            <div class="checkout-card__column checkout-card__column_left">
+                                <div class="checkout-card__unvisible-block"></div>
+                                <div class="checkout-card__img-title-row">
+                                    <a href="#" class="checkout-card__img"><img src="build/img/interior-super-small.jpg" alt=""></a>
+                                    <a href="#" class="checkout-card__title">Матовая краска Interior 02 Super White Spektrum</a>
+                                </div>
+                            </div>
+                            <div class="checkout-card__column checkout-card__column_right">
+                                <div class="checkout-card__price">
+                                    <div class="checkout-card__old-price">647,62 грн.</div>
+                                    <div class="checkout-card__new-price">647,62 грн.</div>
+                                </div>
+                                    <div class="checkout-card__quantity quantity">
+                                        <button class="quantity__minus"><img src="build/img/icons/minus.png" alt=""></button>
+                                        <div class="quantity__value"><span>1</span></div>
+                                        <button class="quantity__plus"><img src="build/img/icons/plus.png" alt=""></button>
+                                    </div>
+                                    <div class="checkout-card__new-price">647,62 грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ordering__total-purchase">
+                    <div class="ordering__total-purchase-row">
+                        <h3 class="ordering__total-purchase-title">Общая сумма покупки</h3>
+                        <div class="ordering__total-purchase-value">1295,24 грн.</div>
+                    </div>
+                </div>
+                <div class="ordering__checkout">
+                    <div class="ordering__tabs-nav">
+                        <div class="ordering__tabs-nav-item active" data-tab-name="tab-1">я новый покупатель</div>
+                        <div class="ordering__tabs-nav-item" data-tab-name="tab-2">уже зарегистрирован</div>
+                    </div>
+                    <div class="ordering__tab active tab-1">
+                        <div class="ordering__new-customer new-customer">
+                            <form class="new-customer__form" id="new-customer__form" action="#" name="newCustomerForm" method="GET">
+                                <div class="new-customer__row">
+                                    <div class="new-customer__column">
+                                        <div class="new-customer__label-input-row">
+                                            <label for="new-customer__name" class="new-customer__label">Имя<span>*</span></label>
+                                            <input type="text" name="name" class="new-customer__input" id="new-customer__name">
+                                        </div>
+                                        <div class="new-customer__label-input-row">
+                                            <label for="new-customer__surname" class="new-customer__label">Фамилия</label>
+                                            <input type="text" name="surname" class="new-customer__input" id="new-customer__surname">
+                                        </div>
+                                        <div class="new-customer__label-input-row">
+                                            <label for="new-customer__tel" class="new-customer__label">Телефон<span>*</span></label>
+                                            <div class="new-customer__tel">
+                                                <input type="tel" name="tel" placeholder="+38" class="new-customer__input new-customer__input_tel" id="new-customer__tel">
+                                                <input type="tel" name="tel" placeholder="( ___ )   ___   __   __" class="new-customer__input" id="new-customer__tel_2">
+                                            </div>
+                                        </div>
+                                        <div class="new-customer__label-input-row">
+                                            <label for="new-customer__email" class="new-customer__label">Email</label>
+                                            <input type="text" name="email" class="new-customer__input" id="new-customer__email">
+                                        </div>
+                                        <div class="new-customer__label-input-row new-customer__label-input-row_textarea">
+                                            <label for="new-customer__comment" class="new-customer__label">Комментарий</label>
+                                            <textarea type="textarea" name="comment" class="new-customer__textarea" id="new-customer__comment"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="new-customer__column">
+                                        <div class="new-customer__label-input-row">
+                                            <label for="new-customer__delivery" class="new-customer__label">Доставка</label>
+                                            <select name="delivery" class="new-customer__select" id="new-customer__delivery">
+                                                <option value="new-mail">Новая почта</option>
+                                            </select>
+                                        </div>
+                                        <div class="new-customer__text">Доставка в отделение службы доставки.
+                                            Выберите любое удобное для вас отделение:</div>
+                                        <div class="new-customer__label-input-row">
+                                            <label for="new-customer__city" class="new-customer__label">Город</label>
+                                            <input type="text" name="city" class="new-customer__input" id="new-customer__city">
+                                        </div>
+                                        <div class="new-customer__label-input-row">
+                                            <label for="new-customer__branch-number" class="new-customer__label">Номер отделения</label>
+                                            <input type="text" name="branch-number" class="new-customer__input" id="new-customer__branch-number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="new-customer__button"><span>Оформить заказ</span></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ordering__tab tab-2">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    //= footer.html
+    <script src="build/js/header.js"></script>
+</body>
+</html>

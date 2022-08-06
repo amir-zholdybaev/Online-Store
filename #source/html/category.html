@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Блог</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="build/css/style.css">
+	<!-- <meta name="robots" content="noindex, nofollow" /> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+<body class="body">
+    <div class="wrapper">
+        //= header.html
+        <main class="category__content">
+            <div class="category__bread-crumbs bread-crumbs">
+                <div class="container">
+                    <ul class="bread-crumbs__list">
+                        <li class="bread-crumbs__link"><a href="index.html"><img src="build/img/icons/home-page.png" alt=""></a></li>
+                        <li class="bread-crumbs__link"><a href="category.html">Лакокрасочные материалы</a></li>
+                        <li class="bread-crumbs__link"><a href="category.html">Краски</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="category__title-select-row">
+                    <h1 class="category__title title title_category">Краски</h1>
+                    <div class="category__select-button-row">
+                        <div class="category__select">
+                            <span>Сортировать по:</span>
+                            <select name="sort-by" id="sort-by">
+                                <option value="убыванию">Цене по убыванию</option>
+                                <option value="нарастанию">Цене по нарастанию</option>
+                                <option value="настроению">По настроению</option>
+                                <option value="кайфу">По кайфу</option>
+                            </select>
+                        </div>
+                        <button class="category__filter-button">Фильтр</button>
+                    </div>
+                </div>
+                <div class="category__row">
+                    <div class="category__filter">
+                        <form class="category__filter-form" action="#" method="GET">
+                            <div class="category__filter-theme">
+                                <h2 class="category__filter-title">Производитель</h2>
+                                <ul class="category__filter-list">
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_1" id="checkbox_1">
+                                        <label class="category__filter-label" for="checkbox_1" name="manufacturer_1">Colors</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_2" id="checkbox_2">
+                                        <label class="category__filter-label" for="checkbox_2" name="manufacturer_2">Max Meyer</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_3" id="checkbox_3">
+                                        <label class="category__filter-label" for="checkbox_3" name="manufacturer_3">Kompozit</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_4" id="checkbox_4">
+                                        <label class="category__filter-label" for="checkbox_4" name="manufacturer_4">Kale</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_5" id="checkbox_5">
+                                        <label class="category__filter-label" for="checkbox_5" name="manufacturer_5">Antica Signoria</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_6" id="checkbox_6">
+                                        <label class="category__filter-label" for="checkbox_6" name="manufacturer_6">Ferrara</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_7" id="checkbox_7">
+                                        <label class="category__filter-label" for="checkbox_7" name="manufacturer_7">Rossetti</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_8" id="checkbox_8">
+                                        <label class="category__filter-label" for="checkbox_8" name="manufacturer_8">Vasco</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_9" id="checkbox_9">
+                                        <label class="category__filter-label" for="checkbox_9" name="manufacturer_9">Spiver</label>
+                                    </li>
+                                </ul>
+                                <a href="#" class="category__filter-link">Открыть все</a>
+                            </div>
+                            <div class="category__filter-theme">
+                                <h2 class="category__filter-title">Страна производитель</h2>
+                                <ul class="category__filter-list">
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_10" id="checkbox_10">
+                                        <label class="category__filter-label" for="checkbox_10" name="made-in_1">Украина</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_11" id="checkbox_11">
+                                        <label class="category__filter-label" for="checkbox_11" name="made-in_2">Италия</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_12" id="checkbox_12">
+                                        <label class="category__filter-label" for="checkbox_12" name="made-in_3">Германия</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_13" id="checkbox_13">
+                                        <label class="category__filter-label" for="checkbox_13" name="made-in_4">Дания</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_14" id="checkbox_14">
+                                        <label class="category__filter-label" for="checkbox_14" name="made-in_5">Польша</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_15" id="checkbox_15">
+                                        <label class="category__filter-label" for="checkbox_15" name="made-in_6">Швеция</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_16" id="checkbox_16">
+                                        <label class="category__filter-label" for="checkbox_16" name="made-in_7">США</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_17" id="checkbox_17">
+                                        <label class="category__filter-label" for="checkbox_17" name="made-in_8">Англия</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_18" id="checkbox_18">
+                                        <label class="category__filter-label" for="checkbox_18" name="made-in_9">Эстония</label>
+                                    </li>
+                                </ul>
+                                <a href="#" class="category__filter-link">Открыть все</a>
+                            </div>
+                            <div class="category__filter-theme">
+                                <h2 class="category__filter-title">Назначение</h2>
+                                <ul class="category__filter-list">
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_19" id="checkbox_19">
+                                        <label class="category__filter-label" for="checkbox_19" name="appointment_1">Внешние работы</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_20" id="checkbox_20">
+                                        <label class="category__filter-label" for="checkbox_20" name="appointment_2">Внутренние работы</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_21" id="checkbox_21">
+                                        <label class="category__filter-label" for="checkbox_21" name="appointment_3">Для металла</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_22" id="checkbox_22">
+                                        <label class="category__filter-label" for="checkbox_22" name="appointment_4">Для дерева</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_23" id="checkbox_23">
+                                        <label class="category__filter-label" for="checkbox_23" name="appointment_5">Для пола</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_24" id="checkbox_24">
+                                        <label class="category__filter-label" for="checkbox_24" name="appointment_6">Для крыши</label>
+                                    </li>
+                                    <li class="category__filter-item">
+                                        <input class="category__filter-input" type="checkbox" name="checkbox_25" id="checkbox_25">
+                                        <label class="category__filter-label" for="checkbox_25" name="appointment_7">Спец. назначения</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="category__filter-theme">
+                                <h2 class="category__filter-title">Цена</h2>
+                            </div>
+                        </form>
+                        <button class="category__filter-close">Показать результаты</button>
+                    </div>
+                    <div class="category__product-pagination-row">
+                        <div class="category__product-row">
+                            <div class="category__column">
+                                <div class="search-results__product-item product-item bestseller">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-super.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Матовая краска Interior 02 Super White Spektrum</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="category__product-item product-item stock">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-pva.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 02</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="category__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-akryl.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 05</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="search-results__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-super.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Матовая краска Interior 02 Super White Spektrum</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="category__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-pva.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 02</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="category__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-akryl.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 05</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="search-results__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-super.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Матовая краска Interior 02 Super White Spektrum</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="category__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-pva.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 02</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="category__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-akryl.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 05</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="search-results__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-super.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Матовая краска Interior 02 Super White Spektrum</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="category__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-pva.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 02</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category__column">
+                                <div class="category__product-item product-item">
+                                    <div class="product-item__content">
+                                        <a href="#" class="product-item__img" id="img"><img src="build/img/interior-akryl.jpg" alt=""></a>
+                                        <div class="product-item__title" id="title">Краска Spektrum Interior 05</div>
+                                        <div class="product-item__price">
+                                            <span class="product-item__old-price" id="old">647,62 грн.</span>
+                                            <span class="product-item__new-price" id="new">647,62 грн.</span>
+                                        </div>
+                                        <button class="product-item__to-buy"><span id="buy">Купить</span></button>
+                                        <button class="product-item__comparison" id="comp">Добавить к сравнению</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category__pagination pagination">
+                            <ul class="pagination__numbers">
+                                <li class="pagination__prew"><a href="#"><img src="build/img/icons/prew-arrow.png" alt=""></a></li>
+                                <li class="pagination__number"><a href="#">1</a></li>
+                                <li class="pagination__number"><a href="#">2</a></li>
+                                <li class="pagination__number active"><a href="#">3</a></li>
+                                <li class="pagination__number"><a href="#">4</a></li>
+                                <li class="pagination__number"><a href="#">5</a></li>
+                                <li class="pagination__number"><a href="#">6</a></li>
+                                <li class="pagination__number"><a href="#">7</a></li>
+                                <li class="pagination__number"><a href="#">8</a></li>
+                                <li class="pagination__number"><a href="#">9</a></li>
+                                <li class="pagination__number"><a href="#">10</a></li>
+                                <li class="pagination__next"><a href="#"><img src="build/img/icons/next-arrow.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__newsletter newsletter">
+                    <h2 class="newsletter__title">Подпишитесь на рассылку и получайте скидки</h2>
+                    <form class="newsletter__form" action="#" name="mail" method="GET">
+                        <input class="newsletter__input" type="text" placeholder="Введите Ваш Email">
+                        <button class="newsletter__button"><img src="build/img/icons/form-letter.png" alt=""></button>
+                    </form>
+                </div>
+                <div class="category__description description">
+                    <div class="description__text">
+                        Уважаемые клиенты, наш интернет магазин штукатурки имеет обширный ассортимент декоративной штукатурки, клей бостик, 3D панели. Большой склад позволяет нам давать самую низкую цену без наценок больших выставочных залов и магазинов. В данный момент склад позволяет отгружать по украине, в киеве штукатурки ойкос, стеклохолст, потолочный плинтус. Купить штукатурку в интернет магазине по достаточно низкой цене, чем в салоне венецианской штукатурки очень обоснованно. Нет никакой разницы между качеством штукатурки травертин в салон магазине и интернет магазине. Таже фасовка, идентичные ведра, точный объем в фасовке. Также мы можем колорировать любую базу штукатурки или краски, на складе в наличии все необходимое оборудование и опытный технолог. На практике вы сможете получить скидку или купить штукатурку по акции на 30 и более процентов.
+                        <br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                </div>
+                <div class="category__comparison">
+                    <a href="#" class="category__comparison-link">Перейти к сравнению</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    //= footer.html
+    <script src="build/js/header.js"></script>
+    <script src="build/js/lib.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            responsiveFont(img, title, perTitle);
+            responsiveFont(img, old, perOld);
+            responsiveFont(img, newP, perNew);
+            responsiveFont(img, buy, perBuy);
+            responsiveFont(img, comp, perComp);
+        });
+        window.addEventListener('resize', function() {
+            responsiveFont(img, title, perTitle);
+            responsiveFont(img, old, perOld);
+            responsiveFont(img, newP, perNew);
+            responsiveFont(img, buy, perBuy);
+            responsiveFont(img, comp, perComp);
+        });
+
+        pagination('.pagination__number');
+
+        var filter = document.querySelector('.category__filter');
+        var filterButton = document.querySelector('.category__filter-button');
+        var filterClose = document.querySelector('.category__filter-close')
+        
+        filterButton.addEventListener('click', function() {
+            filter.classList.toggle('show');
+        });
+        filterClose.addEventListener('click', function() {
+            filter.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

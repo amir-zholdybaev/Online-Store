@@ -1,0 +1,118 @@
+// МИКСИНЫ =====================================================================================
+@mixin flexbox() {display: flex; font-size: 0;}
+// ПОДКЛЮЧЕНИЕ ШРИФТОВ =========================================================================
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Bold.eot');
+	src: local('☺'), url('../fonts/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto-Bold.ttf') format('truetype'), url('../fonts/Roboto-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: 700;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Medium.eot');
+	src: local('☺'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: 500;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('../fonts/SourceSansPro-Regular.eot');
+	src: local('☺'), url('../fonts/SourceSansPro-Regular.woff') format('woff'), url('../fonts/SourceSansPro-Regular.ttf') format('truetype'), url('../fonts/SourceSansPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+// ШРИФТ ПО УМОЛЧАНИЮ ==========================================================================
+$fontFamily:"Roboto";
+// ПЕРЕМЕННЫЕ ДЛЯ АДАПТИВА =====================================================================
+$frame:30;
+$mw:1170 + $frame * 2;
+$md1:$mw+12;
+$md2:993; //992.98
+$md3:768; //767.98
+$md4:480; //479.98
+$minWidth:320px;
+// ОБНУЛЕНИЕ CSS ДЛЯ ВСЕХ БРАУЗЕРОВ ============================================================
+*{padding: 0px;margin: 0px;border: 0px;}
+*,*:before,*:after{box-sizing: border-box;} 
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+aside,nav,footer,header,section{display: block;}
+html,body{height: 100%;margin: 0;padding: 0;min-width: $minWidth;position: relative;width: 100%;color: #000;}
+body{font-size: 100%;line-height: 1;font-size: 14px;font-family: $fontFamily;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: $fontFamily;min-width: 0px;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;background-color: #fff; user-select: none;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
+html {
+	scrollbar-color:  #00B5AB94 #DEDEDE;
+	scrollbar-width: thin;
+	&::-webkit-scrollbar {
+		width: 7px;
+		height: 0px;
+		background-color: #DEDEDE;
+	}
+	&::-webkit-scrollbar-thumb {
+		width: 5px;
+		border-radius: 5px;
+		background-color: #00B5AB94;
+		opacity: 0.5;
+	}
+}
+// ОБОЛОЧКА - .WRAPPER =========================================================================
+.wrapper{
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	// display: flex;
+	// flex-direction: column;
+	// min-height: 100vh;
+}
+// КОНТЭЙНЕР - .CONTAINER ======================================================================
+.container{max-width:$mw+px;margin: 0 auto;width: 100%;padding: 0 $frame+px;
+	@media(max-width: 949px) {
+		
+	}
+}
+.header__container{max-width:$mw+px;margin: 0 auto;width: 100%;padding: 0 $frame+px;
+	@media(max-width: 949px) {
+		padding: 0px;
+	}
+}
+// @media (max-width:$md1+px){max-width: 970px;}
+// @media (max-width:$md2+px){max-width: 870px;}
+// @media (max-width:$md3+px){max-width: none;padding:0 10px;}
+// ПОДКЛЮЧЕНИЕ SCSS ФАЙЛОВ =====================================================================
+@import "header.scss";
+@import "directory.scss";
+@import "index.scss";
+@import "slider.scss";
+@import "product-slider.scss";
+@import "good-to-know-slider.scss";
+@import "footer.scss";
+@import "popup.scss";
+@import "reused.scss";
+@import "blog.scss";
+@import "article.scss";
+@import "contacts.scss";
+@import "search-results.scss";
+@import "category.scss";
+@import "payment-and-delivery.scss";
+@import "ordering.scss";
+@import "product-comparison.scss";
+@import "product-page.scss";
+@import "burger-menu.scss";
