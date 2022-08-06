@@ -1,2 +1,2 @@
 # Online-Store
-Online store 10 pages
+Online store 9 pages
