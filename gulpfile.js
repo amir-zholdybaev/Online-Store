@@ -22,7 +22,8 @@ const htmlFiles = [
     './#source/html/payment-and-delivery.html',
     './#source/html/ordering.html',
     './#source/html/product-comparison.html',
-    './#source/html/product-page.html'
+    './#source/html/product-page.html',
+    './#source/html/all-pages.html'
 ];                            
 const scssFiles = ['./#source/scss/style.scss'];
 
